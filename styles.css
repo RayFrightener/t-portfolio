@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-between;
+  margin-left: auto;
+  margin-right: 400px;
+}
+
+.header > div {
+  margin-right: 15px;
+  padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  /* Adjustments for smaller screens */
+  .header {
+    justify-content: flex-end;
+    margin-right: 0; /* Remove the right margin for smaller screens */
+  }
+
+  .header > div {
+    margin-right: 15px; /* Reset margin for smaller screens if needed */
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  width: 400px; /* Set the desired width for the container */
+  height: 400px; /* Set the desired height for the container */
+  /* background-color: #ddd; Placeholder color for the container */
+}
+
+.image img {
+  max-width: 100%; /* Make the image fit within the container */
+  max-height: 100%; /* Make the image fit within the container */
+}
+
+.text {
+  width: 400px;
+  background-color: #f5f5f5; /* Placeholder color for text */
+  padding: 10px;
+}
+
+.right {
+  flex: 1; /* Take up remaining space */
+  background-color: #f9f9f9; /* Placeholder color for paragraph */
+  padding: 10px;
+  max-width: 500px;
+  
+}
+
+.line {
+  border-right: 1px solid #ccc;
+  margin: 0 20px;
+}
