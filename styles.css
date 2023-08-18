@@ -6,26 +6,29 @@
   margin-right: 400px;
   margin-top: 10px;
 }
-.header > div {
-  padding-right: 15px;
-  padding-top: 10px;
-  font-size: 25px; 
-}
 
-.header > div {
+.header a {
   margin-right: 15px;
   padding-top: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s; /* Add smooth transition */
+}
+
+.header a:hover {
+  transform: scale(1.1); /* Make the link 10% bigger on hover */
+  color: blue;
 }
 
 @media (max-width: 1000px) {
-  /* Adjustments for smaller screens */
   .header {
     justify-content: flex-end;
-    margin-right: 0; /* Remove the right margin for smaller screens */
+    margin-right: 0;
   }
 
-  .header > div {
-    margin-right: 15px; /* Reset margin for smaller screens if needed */
+  .header a {
+    margin-right: 15px;
   }
 }
 
